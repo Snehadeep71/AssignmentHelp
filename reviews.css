@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*------------------section 1 css starts here---------------*/
+.rsec-01{
+    
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(242, 246, 252);
+}
+.rsec-01 h1{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 30px;
+}
+.rsec-01 h1::before{
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: 3px;
+    background-color: #ff0000;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+}
+.rsec-01 h1::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 6px;
+    background-color: #ff0000;
+    left: 50%;
+    bottom: -1.5px;
+    transform: translateX(-50%);
+}
+.reviewboxes{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+    width: 100%;
+   margin-bottom: 60px;
+   
+
+}
+.reviewbox1{
+    border: 1px solid lightgray;
+    width: 400px;
+    height: auto;
+    text-align: left;
+    justify-content: left;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.reviewbox1:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    
+
+}
+.boxes{
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    flex-direction: column;
+    
+    
+
+}
+.boxes p:nth-of-type(2){
+    font-size: 0.9rem;
+}
+.boxes h5{
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+
+}
+.boxes p:first-of-type{
+    color: #7b7b7b;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+}
+.bottom-left{
+   align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #7b7b7b;
+
+    
+}
+#sb{
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.1);
+    background-image: url(images/sample-page-wave.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*------------------section 1 css ends here---------------*/
+/*----------------section 2 responsive css starts here----------*/
+@media only screen and (min-width: 200px) and (max-width: 1336px) {
+    .rsec-01 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center; 
+    }
+    .reviewboxes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 60%;
+        width: 100%;
+    }
+    .reviewbox1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center; 
+        margin-bottom: 30px;
+    }
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        width: 60%; 
+        max-width: 100%; 
+        height: auto;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 20px; 
+        box-sizing: border-box; 
+        text-align: center;
+        border-radius: 10px; 
+       
+    }
+}
+/*----------------section 2 responsive css ends here----------*/
