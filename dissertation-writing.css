@@ -1,0 +1,928 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.dsec-01 {
+    height: 105vh;
+    width: 100%;
+    top: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.right-content {
+    /* height: 100vh; */
+    margin: 10px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+
+
+}
+
+.right-content .right-content1 h1 {
+
+    font-size: 2rem;
+    height: auto;
+
+
+}
+
+.right-content .right-content1 p {
+    font-size: 1.2rem;
+}
+
+.right-content1 {
+    margin-bottom: 30px;
+    padding: 15px 0px;
+}
+
+.right-subcontent {
+    margin-top: 20px;
+    padding: 15px 0px;
+}
+
+.right-subcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.rating {
+    color: gold;
+}
+
+/*-----------------------lefty form css starts here--------------*/
+.left-form {
+    margin-top: 40px;
+    background-color: rgb(235, 235, 235);
+    width: 48%;
+    /* border: 2px solid black; */
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 1024px) {
+    .dsec-01 {
+        height: auto;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .right-content {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .left-form {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .right-subcontent {
+        flex-direction: column;
+    }
+    #name, #mobile, #email, #subject, #datetime, #gq {
+        width: 70%;
+        padding: 10px;  
+        margin: 5px 0; 
+        border: 1px solid #ccc;  
+        display: block;  
+    }
+    .order-form button {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .right-content1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .right-content1 p {
+        font-size: 1rem;
+    }
+
+    .right-subcontent1 {
+        margin-bottom: 20px;
+    }
+
+    .order-form label {
+        margin-bottom: 10px;
+    }
+
+    .order-form button {
+        margin-top: 10px;
+    }
+
+    .rating {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .right-content1 h1 {
+        font-size: 1.2rem;
+    }
+
+    .right-content1 p {
+        font-size: 0.9rem;
+    }
+
+    .right-subcontent {
+        align-items: flex-start;
+    }
+}
+
+/*-------------------------sec-07 heading css starts here-----------------*/
+.sec-07heading h1::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    background-color: #ff4500;
+    height: 3px;
+    width: 340px;
+    transform: translateX(-50%);
+
+}
+
+.sec-07heading h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -16.5px;
+    background-color: #ff4500;
+    height: 6px;
+    width: 50px;
+    transform: translateX(-50%);
+
+}
+
+/*-------------------------sec-07 heading css ends here-----------------*/
+/*-------------sec-02 css starts here--------------------------*/
+.dsec-02 {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.dsec-02 h1 {
+    font-size: 2.5rem;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.dsec-02 #main-para {
+    font-size: 1.3rem;
+}
+
+.dsec-02content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 15px 0px;
+    gap: 60px;
+}
+
+.dsec-02content .dsec-02content1 {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 30%;
+    /* Adjusted flex basis for better responsiveness */
+    max-width: 30%;
+    /* Ensures that flex items don't grow too large */
+
+}
+
+.dsec-02content .dsec-02content1 .dsec-02content1img img {
+    width: 80px;
+    height: 80px;
+}
+
+.dsec-02content1 .dsec-02contenttext {
+    align-items: left;
+    width: 60%;
+
+}
+
+.dsec-02content1 .dsec-02contenttext p {
+    height: 12vh;
+    line-height: 1.5;
+    align-items: left;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    transition: overflow 0.3s ease;
+}
+
+.dsec-02content1 .dsec-02contenttext p:hover {
+    overflow-y: auto;
+}
+
+.btn3 {
+    color: #000;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #ff4500;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 8px 10px 3px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+
+
+}
+
+.btn3:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .dsec-02 h1 {
+        font-size: 2rem;
+    }
+
+    .dsec-02 #main-para {
+        font-size: 1.1rem;
+    }
+
+    .dsec-02content {
+        gap: 30px;
+    }
+
+    .dsec-02content .dsec-02content1 {
+        flex: 1 1 45%;
+        /* Adjusted for smaller screens */
+        max-width: 45%;
+        /* Ensures that flex items don't grow too large */
+    }
+}
+
+@media (max-width: 768px) {
+    .dsec-02 h1 {
+        font-size: 1.8rem;
+    }
+
+    .dsec-02 #main-para {
+        font-size: 1rem;
+    }
+
+    .dsec-02content .dsec-02content1 {
+        flex: 1 1 100%;
+        max-width: 100%;
+        /* Stack items on top of each other */
+    }
+}
+
+/*-------------sec-02 css ends here--------------------------*/
+/*--------------sec-03  css starts here---------------------------*/
+.dsec-03 {
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.dsec-03 h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+
+.slider-container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider1 {
+    min-width: 33.333%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: left;
+}
+
+.slide-content {
+    background-color: white;
+    min-height: 40vh;
+    color: #000;
+    padding: 30px;
+    margin: 10px;
+    line-height: 25px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.slide-content #p3 {
+    margin-top: 45px;
+}
+
+.slide-content #p2 {
+    margin-top: 6px;
+}
+
+.slide-content #p1 {
+    font-size: 0.8rem;
+    color: #9c9c9c;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateX(50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-button {
+    left: -20px;
+
+}
+
+.next-button {
+    right: 10px;
+    /* Move the button to the right */
+}
+
+@media (max-width:768px) {
+    .slider1 {
+        min-width: 100%
+    }
+}
+
+/*--------------sec-03 css  ends here-----------------------------*/
+/*------------------process section css starts from here---------------*/
+.psec-01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+    width: 100%;
+    min-height: 80vh;
+    flex-wrap: wrap;
+}
+
+.psecheading {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 100%;
+
+}
+.psecheading h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+} 
+.psecheading h1::before{
+    content: '';
+    position: absolute;
+    background-color: #ff4500;
+    width: 340px;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -13.9px;
+}
+
+.psecheading h1::after{
+    content: '';
+    background-color: #ff4500;
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+}
+
+.pcontainer1 {
+    width: 1170PX;
+    flex: 1 1 28%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.pimagecontainer img{
+    width: 150px;
+    height: 150px;
+}
+.pcontentcontainer {
+    text-align: center;
+    padding: 0 20px;
+    flex: 1;
+    min-width: 280px; /* Minimum width to ensure content is not too narrow */
+}
+
+.pcontentcontainer h3 {
+    margin-top: 0;
+}
+
+.pcontentcontainer p {
+    margin: 0;
+    font-size: 1rem;
+    word-wrap: break-word;
+    padding: 0 10px; /* Add padding to prevent content from touching the edges */
+}
+.psec-01 i{
+    font-size: 1.5rem;
+    margin-top: 12%;
+}
+
+
+/*----------------mobile responsiveness for the order form starts here----------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+
+    .psec-01{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+     #arrow-right1,#arrow-right2{
+        transform: rotate(90deg);
+        margin-right: 40px;
+    }
+    .psecheading h1{
+        font-size: 1.8rem;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+        margin-right: 25px;
+
+    }
+    .psecheading h1::before{
+        width: 200px;
+    }
+    .pcontainer1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pcontentcontainer p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+    .pcontainer1{
+        margin-right: 30px;
+    }
+    .btn3{
+        margin-right: 30px;
+    }
+}
+/*----------------mobile responsiveness for the order form ends here----------*/
+
+/*------------------process section css ends  here---------------*/
+/*--------------sec-04 css  starts here-----------------------------*/
+.dsec-04 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Adjust alignment to top */
+}
+
+.lefttext,
+.righttext {
+    width: 48%;
+    /* border: 2px solid red; */
+    height: 80vh;
+    margin: 10px;
+    padding: 10px;
+}
+
+.righttext {
+    text-align: left;
+}
+
+.leftcontent1 h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.leftcontent1 p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.leftcontent2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: space-between;
+
+}
+
+.leftcontent2 h3 {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.feature-list1 {
+    flex: 3 0 33%;
+    padding: 10px;
+}
+
+.righttext {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 90vh;
+    box-shadow: -20px 10px 10px rgba(0, 0, 0, 0.6)
+}
+
+.pricing-heading {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.righttextcontent2,
+.righttextcontent1 {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 10px;
+
+}
+
+.content-wrapper1,
+.righttextcontent2 span {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    /* text-align: center; */
+    top: 0;
+
+}
+
+.content-wrapper1,
+.righttextcontent2 span {
+    padding: 10px;
+    gap: 10px;
+    margin: 5px;
+}
+
+.button-container {
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+    color: black;
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.button-container p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.btn4 {
+    width: 200px;
+    display: flex;
+    height: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ff4500;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn4:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .feature-list {
+        grid-template-columns: repeat(1, 1fr);
+        /* Adjust to 2 columns on smaller screens */
+    }
+
+    .lefttext,
+    .righttext {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .dsec-04 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .feature-list {
+        grid-template-columns: 1fr;
+        /* Adjust to 1 column on very small screens */
+    }
+
+    .righttext {
+        flex-direction: column;
+    }
+
+    .righttextcontent1,
+    .righttextcontent2 {
+        flex-direction: column;
+    }
+}
+
+.dsec-05 {
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.accordion-title {
+    font-size: 2rem;
+    margin: 2rem 0rem;
+    position: relative;
+
+}
+
+.accordion-title::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    background-color: #ff4500;
+    width: 50px;
+    height: 6px;
+    bottom: -15px;
+    transform: translateX(-50%);
+}
+
+.accordion-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    background-color: #ff4500;
+    width: 240px;
+    height: 3px;
+    bottom: -14.5px;
+    transform: translateX(-50%);
+}
+
+.faq {
+    max-width: 700px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #cecdcd;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.faq-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    gap: 40px;
+    /* box-shadow: 10px 10px 5px rgba( 0 , 0, 0, 0.5); */
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.answer p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+
+.faq.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active i {
+    transform: rotate(180deg);
+}
+
+i {
+    transition: transform 0.5s ease-in;
+    margin-right: 10px;
+
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/*-------------dsec-05 responsive css starts here------------------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+    .dsec-05{
+        display: flex;
+        flex-direction: column;
+    }
+    .faq-container{
+        display: flex;
+        flex-direction: column; 
+    }
+    .faq .answer p{
+        width: auto;
+        height: auto;
+        overflow-y:scroll;
+    }
+    .accordion-title{
+        margin-left: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .accordion-title h2:after{
+        bottom: -15px;
+    }
+}
+/*-------------dsec-05 responsive css ends here------------------*/
+
+/*--------------sec-04 css  ends here-----------------------------*/
+/*--------------sec-06 css  starts here-----------------------------*/
+.dsec-06 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    flex-direction: row;
+    background-image: linear-gradient(white, skyblue);
+    border-radius: 20px;
+    margin: 30px 30px;
+
+}
+
+.dsec-06 .excel-left-container {
+    display: flex;
+    flex-direction: row;
+    width: 42%;
+}
+
+.dsec-06 .excel-left-container img {
+    margin-left: 25%;
+}
+
+.excel-right-container .exceltext {
+    margin: 10px;
+    margin-right: 20%;
+}
+
+.excel-right-container .exceltext h2 {
+    font-size: 2.5rem;
+    margin: 20px;
+}
+
+.excel-right-container .exceltext p {
+    font-size: 1.3rem;
+    margin: 20px;
+    color: #7b7b7b;
+}
+
+.excel-right-container .exceltext button {
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: #ff4500;
+
+}
+
+
+.btn5 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+}
+
+.btn5:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+/*--------------sec-06 css  ends here-----------------------------*/
+/*--------------sec-06 responsive css  starts here-----------------------------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+    .dsec-06{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+       
+        
+    }
+    /* .excel-left-container{
+        margin-left: 20px;
+    } */
+}
+/*--------------sec-06 responsive css  ends here-----------------------------*/

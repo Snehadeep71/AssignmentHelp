@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------------section 02 css starts here------------------*/
+.aboutsec-02 {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/sample-page-wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(234, 239, 253);
+}
+
+.aboutsecheading {
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.aboutsecheading h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.aboutsecheading p {
+    font-size: 1.2rem;
+    color: #7b7b7b;
+    margin-top: 30px;
+}
+
+.aboutsecbox {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    column-gap: 40px;
+}
+
+.aboutsecbox1 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+
+}
+
+.aboutsecimage img {
+    /* border-radius: 50%; */
+    text-align: center;
+    width: 100px;
+    height: auto;
+    padding: 30px;
+}
+
+.aboutsecimage {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    background-color: antiquewhite;
+}
+
+.aboutseccontent h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.aboutseccontent p {
+    font-size: 1rem;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: left;
+    justify-content: center;
+    color: #7b7b7b;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.aboutseccontent p:hover {
+    overflow-y: scroll;
+}
+
+/*-----------------section 02 css ends here------------------*/
+/*-----------------section 02  responsive css starts here------------------*/
+@media only screen and (min-width:200px) and (max-width:1336px) {
+    .aboutsec-02 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .aboutsecbox {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        align-items: center;
+    }
+}
+
+/*-----------------section 02  responsive css ends here------------------*/
+/*-----------------section 03   css starts here------------------*/
+.aboutsec-03 {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: space-between;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 70px;
+    margin-top: 40px;
+}
+
+.notableachievements,
+.leadingadvantages {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, #ffffffff, rgb(188, 207, 255));
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.leadingadvantages {
+    background: linear-gradient(to top, #ffffffff, rgb(188, 207, 255));
+}
+
+.notableheading,
+.advantageheading {
+    text-align: center;
+    justify-content: center;
+}
+
+.notableheading h1,
+.advantageheading h1 {
+    margin-bottom: 30px;
+    font-size: 2.3rem;
+}
+
+.na1,
+.la1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 20px;
+
+}
+
+.na1img,
+.la1img {
+    background: #fff;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.na1img img,
+.la1img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.na1content,
+.la1content {
+    padding: 5px;
+
+}
+
+.na1content h3,
+.la1content h3 {
+    margin-bottom: 10px;
+}
+
+.na1content p,
+.la1content p {
+    line-height: 1.6;
+    color: #7b7b7b;
+}
+
+/*-----------------section 03   css ends here------------------*/
+/*-----------------section 03 responsive css starts here------------------*/
+@media only screen and (min-width:200px) and (max-width:1336px) {
+    .aboutsec-03 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .notableachievements,
+    .leadingadvantages {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .na1,
+    .la1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .na1img,
+    .la1img {
+        background: #fff;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        padding: 20px;
+        border-radius: 50%;
+        align-self: center;
+    }
+
+    .notableheading h1,
+    .advantageheading h1 {
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+    }
+}
+
+/*-----------------section 03 responsive css ends here------------------*/
+/*-----------------section 04  css starts here------------------*/
+.aboutsec-04{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 30vh;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+.aboutsec-04heading{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+.aboutsec-04heading h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.aboutsec-04boxes{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    box-sizing: border-box;
+    
+
+}
+.aboutsec-04box{
+    width: 100%;
+    height: auto;
+    border: 1px solid lightgray;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 5px 10px 7px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+    padding: 15px;
+}
+.aboutsec-04box:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/*-----------------section 04  css ends here------------------*/
+/*-----------------section 04 responsive css starts here------------------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+    .aboutsec-04{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutsec-04boxes{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+/*-----------------section 04 responsive css ends here------------------*/

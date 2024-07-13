@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.asec-01{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/sample-page-wave.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.asec-01 h1{
+    font-size: 5rem;
+    color: #000;
+    font-weight: bold;
+}
+.asec-01 p{
+    width: 1190px;
+    font-size: 1.3rem;
+    color: #7b7b7b;
+    line-height: 1.6;
+    height: auto;
+
+}
+/*-----------asec-01 responsive css starts here----------------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+    .asec-01{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        min-height: 100vh;
+        justify-content: center;
+        text-align: center;
+    }
+    .asec-01 h1{
+        font-size: 2.5rem;
+    }
+    .asec-01 p{
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+/*-----------asec-01 responsive css ends here----------------*/
+/* -----------------asec-02 section css starts here----------- */
+    .asec-02{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 100vh;
+        margin-top: 30px;
+    }
+    .leftcategory{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        width: 55%;
+        margin-top: 30px;
+        margin: 0px 35px;
+        
+    }
+    .leftcategory1 h4,.leftcategory2 h4{
+        color: #7b7b7b;
+       padding: 20px 0px;
+    }
+    .leftcategory1 h4:hover,
+    .leftcategory2 h4:hover{
+        border-bottom: 1px solid lightgray;
+        color: blue;
+        width: fit-content;
+        cursor: pointer;
+    }
+    /* -------------right category css starts here---------*/
+    .rightcategory {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 45%;
+        text-align: center;
+        padding: 20px;
+       
+        box-sizing: border-box;
+        height: fit-content;
+       
+    }
+    
+    .categories-container {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        background: linear-gradient(to top,#c4e5f5,#fff);
+        margin-bottom: 20px;
+    }
+   
+    .rightcategory1, .rightcategory2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Align items from the top */
+        align-items: flex-start; /* Align items to the left */
+        min-height: 100%; /* Ensure containers expand to fit content */
+    }
+    
+    .rightcategory1 h5,
+    .rightcategory2 h5 {
+        margin: 5px 0; /* Adjust this value as needed */
+        text-align: left;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 1rem;
+        color: #7b7b7b;
+    }
+    
+    .rightcategory h3 {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 1 1 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+/* -------------right category css starts here---------*/
+/* -------------right category responsive css starts here---------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+
+    .asec-02{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .leftcategory{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        align-items: center;
+       
+    }
+    .rightcategory{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .categories-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .rightcategory2{
+        margin-left: 22px;
+    }
+    #pp{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}
+/* -------------right category responsive css ends here---------*/
+
+
+/* -----------------asec-02 section css ends here----------- */
+.post{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    min-height: auto;
+    margin-top: 30px;
+    background: linear-gradient(to top,#c4e5f5,#fff);
+}
+.post h3{
+    margin-top: 30px;
+    text-align: left;
+    justify-content: left;
+    margin-bottom: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 2rem;
+}
+.post1 img{
+    width: 85%;
+    height: auto;
+}
+.post1 h4{
+    text-align: left;
+    justify-content: left;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0px 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.post1 p{
+    text-align: left;
+    justify-content: left;
+    font-size: 1rem;
+    color: #7b7b7b;
+    line-height: 1.6;
+    padding:0px  30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}

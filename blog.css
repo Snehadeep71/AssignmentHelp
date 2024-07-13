@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bsec-01{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/sample-page-wave.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.blogheading{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* z-index: 100; */
+    margin: auto;
+    
+}
+.blogheading h1{
+    font-size: 3rem;
+    color: #000;  
+    background: linear-gradient(to right, #ffffff, #ffcc00);
+}
+/*-------------------------section 1 responsive css starts here------------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+    .bsec-01{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+/*-------------------------section 1 responsive css ends here------------*/
+/*---------------blog section 2 css starts here-----------------*/
+.bsec-02{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+}
+.blogpostheading{
+    text-align: center;
+    justify-content: center;
+    display: block;
+    font-size: 2rem;
+}
+.blogposts{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1 1 100%;
+    column-gap: 10px;
+    flex-direction: row;
+    margin: 0px 30px;
+    
+   
+}
+.blogpostleft{
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: column;
+}
+.blogpost1{
+    display: flex;
+    flex-direction: column;
+}
+.blogpostright{
+    margin-right: 40px;
+}
+.blogpostimg img{
+    align-items: center;
+    border-radius: 20px;
+}
+.blogpostcontent{
+    text-align: left;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.blogpostcontent h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.blogpostcontent p{
+    width: 300px; 
+    line-height: 1.6;
+    color: #7b7b7b;
+}
+.blogposts{
+    width: 50%;
+}
+.categories{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.categorymainheading h2{
+    text-align: left;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.categorysubheading  h5{
+    padding: 10px;
+    box-sizing: border-box;
+}
+.categorysubheading  h5:hover{
+    border-bottom: 1px solid #7b7b7b;
+    width: fit-content;
+    cursor: pointer;
+}
+/*-------------------section essay css ends here-------------*/
+.newsletter{
+    display: flex;
+    width: 100%;
+    min-height: auto;
+    justify-content: center;
+    
+}
+.newscontainer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    width: 100%;
+    min-height: auto;
+    background-image: url(images/subscription-card-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* z-index: 100; */
+    border-radius: 20px;
+    
+}
+.newscontainer h3{
+    
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    padding: 8px 20px;
+   
+}
+.newscontainer p{
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    padding: 8px 0px;
+}
+.newscontainer h3{
+    font-size: 1.7rem;
+}
+.join{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+.joincontent{
+    
+    border: 2px solid lightgray;
+    background: linear-gradient(to top,#c4e5f5,#fff);
+    min-height: 80vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 5px;
+    width: 100%;
+}
+.joincontentimage img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.joincontent h2{
+    color: #000;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.joincontentpara h2,p{
+    margin: 3% 0px;
+
+}
+.joincontent p{
+    text-align: center;
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+}
+/*---------------blog section 2 css ends here-----------------*/
+/*---------------section 2 responsive css starts here ---------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+
+    .bsec-02{
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+       align-items: center;
+       padding: 20px;
+       box-sizing: border-box;
+    }
+    .categories{
+        flex-direction: column;
+         width: 100%;
+         min-height: 100vh; 
+    }
+    .blogposts{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .newsletter{
+        width: 100%;
+        height: auto;
+    }
+    .newscontainer{
+        width: 100%;
+        height: auto;
+    }
+    .join {
+        width: 100%;
+    }
+
+    .joincontent {
+        width: 100%;
+    }
+
+}
+/*---------------section 2 responsive css ends here ---------*/
+/*-------------------section essay css starts here-------------*/
+.essayheading{
+    margin-top: 70px;
+}
+.essayheading h2{
+    font-size: 3rem;
+    padding: 20px;
+}
+.essaypost{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.essaycontent{
+    padding: 20px;
+}
+.essayimg img{
+    border-radius: 20px;
+    margin: 20px 20px;
+    width: 300px;
+    height: 200px;
+}
+.essaycontent h3{
+    font-size: 1.5rem;
+}
+.essaycontent p{
+    font-size: 1rem;
+    color: #7b7b7b;
+    line-height: 1.6;
+    justify-items: left;
+    padding: 20px 0px;
+}
+.essaypost1,.essaypost2 {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+.essaypost2{
+    margin-bottom: 100px;
+}
+.essaypost1{
+    margin-bottom: 30px;
+}
+/*--------------essay section  responsive  css starts here-------------------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+    .essayheading{
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .essaypost{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .essaypost1,.essaypost2{
+        display: flex;
+        /* align-items: center; */
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+/*--------------essay section responsive  css ends here-------------------*/
+/*---------------blog section 3 css starts here-----------------*/
+.sectopic{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    min-height: 100vh;
+    width: 65%;
+}
+.sec02head{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
+
+}
+.sec02head h2{
+    font-size: 2.5rem;
+    color: #000;
+
+}
+.researchimage img{
+    padding: 20px;
+    border-radius: 40px;
+}
+.researchcontent{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.researchcontent p{
+    color: #7b7b7b;
+}
+/*---------------blog section 3 css ends here-----------------*/
+/*---------------blog section 4 css starts here-----------------*/
+.lastblog{
+    display: flex;
+    width: 65%;
+    min-height: 100vh;
+    justify-content: space-evenly;
+}
+.leftlastblog,.rightlastblog{
+    gap: 10px;
+    padding: 20px;
+}
+.leftlastblog1 img,.rightlastblog1 img{
+    border-radius: 30px;
+}
+.leftlastblog1 p,.rightlastblog1 p{
+    color: #7b7b7b;
+    text-align: left;
+    line-height: 1.6;
+}
+.leftlastblog1 h3,.rightlastblog1 h3{
+    padding: 10px 0px;
+}
+/*---------------blog section 4 css ends here-----------------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+    .sectopic{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .researchimage img{
+        margin: 0px 20px;
+        box-sizing: border-box;
+    }
+    .lastblog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+    .researchcontent p{
+        line-height: 1.6;
+    }
+}
